@@ -55,7 +55,7 @@ def set_custom_prompt():
 
 def load_llm():
     return CTransformers(
-        model="llama-2-7b-chat.ggmlv3.q2_K.bin",
+        model="TheBloke/Llama-2-7B-Chat-GGML",
         model_type="llama",
         max_new_tokens=512,
         temperature=0.7
