@@ -1,0 +1,15 @@
+pypdf
+langchain
+torch
+accelerate
+bitsandbytes
+transformers
+sentence_transformers
+faiss-cpu
+langchain-community
+gradio
+tensorflow
+pandas
+numpy
+peft
+ctransformers
