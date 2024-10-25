@@ -12,7 +12,7 @@ from datetime import datetime
 
 # Configuration for image classification model
 class_names = ['Calculus', 'Dental Caries', 'Gingivitis', 'Hypodontia', 'Tooth Discoloration']
-model = load_model('model2.keras')
+model = load_model('Model3.keras')
 
 def classify_images(image):
     # Check if the image is None
@@ -21,7 +21,7 @@ def classify_images(image):
 
     # Resize and preprocess the image
     try:
-        input_image = tf.image.resize(image, (256, 256))  # Resize to expected input size
+        input_image = tf.image.resize(image, (180, 180))  # Resize to expected input size
         input_image_array = tf.keras.utils.img_to_array(input_image)
         input_image_exp_dim = tf.expand_dims(input_image_array, axis=0)
 
