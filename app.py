@@ -12,7 +12,7 @@ from datetime import datetime
 
 # Configuration for image classification model
 class_names = ['Calculus', 'Dental Caries', 'Gingivitis', 'Hypodontia', 'Tooth Discoloration']
-model = load_model('Model3.keras')
+model = load_model('data/Model3.keras')
 
 def classify_images(image):
     # Check if the image is None
